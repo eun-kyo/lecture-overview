@@ -1,145 +1,367 @@
 <!doctype html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>2025년 교육과정 개요서 - 전체 목차</title>
-<style>
-  body {
-    font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
-    background: #f4f6fb; color:#1a1a1a; margin:0; padding: 40px 16px;
-  }
-  .wrap { max-width: 780px; margin: 0 auto; background:#fff; padding: 40px 44px 48px; border-radius: 10px; box-shadow: 0 2px 14px rgba(31,56,100,0.08); }
-  h1 { color:#1F3864; font-size: 30px; margin: 0 0 4px; }
-  .sub { color:#2E5AA8; font-weight:700; margin-bottom: 4px; }
-  .meta { color:#666666; font-size: 14px; margin-bottom: 26px; }
-  table { width:100%; border-collapse: collapse; }
-  th, td { border:1px solid #d7dfef; padding: 10px 12px; font-size: 14px; text-align:left; }
-  th { background:#1F3864; color:#fff; }
-  tr:nth-child(even) td { background: #EDF2FA; }
-  a { color:#2E5AA8; text-decoration:none; font-weight:600; }
-  a:hover { text-decoration: underline; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Leader Campus 정은교 강사 공식 홈페이지. 변화관리 리더십, 조직 소통·갈등관리, AI×리더십, PTS 심리유형 기반 팀빌딩, 조직문화, 스트레스 관리 교육.">
+  <meta name="theme-color" content="#10284b">
+  <meta property="og:title" content="Leader Campus | 정은교">
+  <meta property="og:description" content="사람을 이해하고, 관계를 연결하고, 변화를 실행하는 리더십 교육">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://leadercampus.co.kr/">
+  <title>Leader Campus | 정은교</title>
+  <style>
+    :root{
+      --navy:#10284b;
+      --navy2:#183a6a;
+      --blue:#2e5aa8;
+      --sky:#eaf2ff;
+      --ink:#18202a;
+      --muted:#667085;
+      --line:#dce4ef;
+      --paper:#ffffff;
+      --bg:#f5f7fb;
+      --accent:#d7a95b;
+      --shadow:0 18px 55px rgba(16,40,75,.11);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:var(--bg);
+      font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+      line-height:1.65;
+      word-break:keep-all;
+    }
+    a{color:inherit}
+    .container{width:min(1120px, calc(100% - 40px)); margin:0 auto}
+    header{
+      position:sticky; top:0; z-index:50;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(220,228,239,.8);
+    }
+    .nav{
+      height:72px; display:flex; align-items:center; justify-content:space-between; gap:24px;
+    }
+    .brand{display:flex; align-items:center; gap:12px; text-decoration:none; font-weight:900; color:var(--navy)}
+    .mark{
+      width:38px; height:38px; border-radius:12px;
+      background:linear-gradient(145deg,var(--navy),var(--blue));
+      color:white; display:grid; place-items:center; font-size:14px; letter-spacing:-.5px;
+      box-shadow:0 8px 22px rgba(16,40,75,.22);
+    }
+    .brand span:last-child{font-size:18px; letter-spacing:.3px}
+    nav ul{display:flex; list-style:none; gap:26px; padding:0; margin:0; font-size:14px; font-weight:750}
+    nav a{text-decoration:none; color:#384250}
+    nav a:hover{color:var(--blue)}
+    .hero{
+      background:
+        radial-gradient(circle at 80% 15%, rgba(215,169,91,.18), transparent 28%),
+        linear-gradient(135deg,#0e2443 0%, #173b6c 58%, #255a9d 100%);
+      color:white;
+      overflow:hidden;
+    }
+    .hero-grid{
+      min-height:620px; display:grid; grid-template-columns:1.25fr .75fr; gap:54px; align-items:center;
+      padding:86px 0 76px;
+    }
+    .eyebrow{
+      display:inline-flex; gap:8px; align-items:center; padding:7px 12px;
+      border:1px solid rgba(255,255,255,.25); border-radius:999px;
+      color:#e7effc; font-size:13px; font-weight:800; letter-spacing:.7px;
+      background:rgba(255,255,255,.06);
+    }
+    .hero h1{font-size:clamp(40px,5.2vw,68px); line-height:1.12; letter-spacing:-2.2px; margin:22px 0 24px}
+    .hero h1 em{font-style:normal; color:#f0ca88}
+    .hero p{font-size:18px; color:#e8eef7; max-width:720px; margin:0}
+    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:34px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      min-height:48px; padding:0 20px; border-radius:12px; text-decoration:none; font-weight:800;
+      border:1px solid transparent;
+    }
+    .btn.primary{background:white; color:var(--navy)}
+    .btn.secondary{border-color:rgba(255,255,255,.32); color:white; background:rgba(255,255,255,.05)}
+    .hero-card{
+      padding:30px; border-radius:26px;
+      background:rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.18);
+      box-shadow:0 30px 80px rgba(0,0,0,.16);
+    }
+    .hero-card .label{font-size:12px; font-weight:900; letter-spacing:1.6px; color:#cbd9ed}
+    .hero-card h2{margin:10px 0 18px; font-size:26px; line-height:1.32}
+    .hero-card ul{list-style:none; padding:0; margin:0; display:grid; gap:11px}
+    .hero-card li{padding:12px 14px; border-radius:12px; background:rgba(255,255,255,.08); color:#edf3fb; font-size:14px}
+    section{padding:92px 0}
+    .section-head{display:flex; align-items:end; justify-content:space-between; gap:24px; margin-bottom:34px}
+    .kicker{font-size:13px; color:var(--blue); font-weight:900; letter-spacing:1.4px; text-transform:uppercase}
+    h2.section-title{font-size:clamp(30px,3.5vw,44px); line-height:1.25; margin:8px 0 0; letter-spacing:-1.4px; color:var(--navy)}
+    .lead{color:var(--muted); max-width:620px; margin:0; font-size:16px}
+    .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+    .card{
+      background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:26px;
+      box-shadow:0 10px 30px rgba(16,40,75,.045);
+    }
+    .num{font-size:12px; color:var(--blue); font-weight:900; letter-spacing:1.2px}
+    .card h3{margin:10px 0 10px; color:var(--navy); font-size:21px; line-height:1.35}
+    .card p{margin:0; color:var(--muted); font-size:14.5px}
+    .approach{background:white}
+    .approach-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px}
+    .quote{
+      border-radius:var(--radius); padding:34px; background:linear-gradient(145deg,var(--navy),var(--navy2)); color:white;
+      min-height:100%;
+    }
+    .quote p{font-size:28px; line-height:1.45; margin:0 0 18px; letter-spacing:-.8px; font-weight:800}
+    .quote small{color:#cdd9e9}
+    .principles{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+    .principle{border:1px solid var(--line); border-radius:18px; padding:22px; background:#fbfcfe}
+    .principle strong{display:block; color:var(--navy); margin-bottom:7px}
+    .profile-grid{display:grid; grid-template-columns:.8fr 1.2fr; gap:28px; align-items:stretch}
+    .profile-visual{
+      border-radius:var(--radius); padding:34px; color:white; min-height:390px;
+      background:
+        linear-gradient(180deg,rgba(16,40,75,.05),rgba(16,40,75,.62)),
+        linear-gradient(145deg,#2e5aa8,#10284b);
+      display:flex; flex-direction:column; justify-content:flex-end;
+    }
+    .profile-visual .initial{font-size:96px; font-weight:950; opacity:.16; line-height:1}
+    .profile-visual h3{font-size:30px; margin:10px 0 4px}
+    .profile-visual p{margin:0;color:#dfe8f4}
+    .profile-box{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:32px}
+    .profile-box h3{color:var(--navy);font-size:25px;margin:0 0 18px}
+    .profile-list{display:grid;gap:0;margin:0;padding:0;list-style:none}
+    .profile-list li{padding:13px 0;border-bottom:1px solid #edf1f6;color:#384250}
+    .profile-list li:last-child{border-bottom:0}
+    .program-cta{
+      border-radius:28px; padding:46px;
+      background:linear-gradient(135deg,#eaf2ff,#f8fbff 55%,#fff7e8);
+      border:1px solid #d7e4f6; display:grid; grid-template-columns:1fr auto; gap:30px; align-items:center;
+    }
+    .program-cta h3{font-size:31px; color:var(--navy); margin:0 0 8px; letter-spacing:-.8px}
+    .program-cta p{margin:0;color:#586577}
+    .program-cta .btn{background:var(--navy);color:white}
+    .contact{
+      background:#0f2748;color:white;
+    }
+    .contact-box{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+    .contact h2{font-size:42px;line-height:1.25;margin:0 0 18px}
+    .contact p{color:#d7e1ee;margin:0}
+    .contact-note{
+      background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);
+      border-radius:20px;padding:28px;
+    }
+    .contact-note strong{display:block;font-size:18px;margin-bottom:10px}
+    .contact-note ul{margin:0;padding-left:20px;color:#dbe5f1}
+    footer{background:#0b1d36;color:#aebdd0;padding:28px 0;font-size:13px}
+    footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .mobile-menu{display:none}
+    @media (max-width:900px){
+      nav{display:none}
+      .hero-grid,.profile-grid,.contact-box{grid-template-columns:1fr}
+      .hero-grid{min-height:auto;padding:70px 0}
+      .hero-card{max-width:600px}
+      .grid-3{grid-template-columns:1fr 1fr}
+      .approach-grid{grid-template-columns:1fr}
+      .program-cta{grid-template-columns:1fr;padding:32px}
+    }
+    @media (max-width:620px){
+      .container{width:min(100% - 28px,1120px)}
+      .nav{height:64px}
+      .hero h1{letter-spacing:-1.3px}
+      .hero p{font-size:16px}
+      section{padding:68px 0}
+      .grid-3,.principles{grid-template-columns:1fr}
+      .section-head{display:block}
+      .lead{margin-top:14px}
+      .card{padding:22px}
+      .quote p{font-size:23px}
+      .program-cta h3{font-size:26px}
+      .contact h2{font-size:34px}
+    }
+  </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="sub">2025년</div>
-    <h1>교육과정 개요서</h1>
-    <div class="meta">정은교 · 크리비즈 교육사업본부 — 강의별 과정 개요 22건 (2025년 1월~7월)</div>
-    <table>
-      <tr><th>No.</th><th>교육 대상(업체명)</th><th>교육일시</th><th>시간</th></tr>
-      <tr>
-      <td>1</td>
-      <td><a href="01_엠아이커피.html">엠아이커피</a></td>
-      <td>2025년 1월 중 (확정일 1월 23일)</td>
-      <td>2시간(이형국) + 4시간(정은교), 총 6시간</td>
-    </tr><tr>
-      <td>2</td>
-      <td><a href="02_현대벤디스.html">현대벤디스</a></td>
-      <td>2025년 2월 (확정일 1월 8일)</td>
-      <td>2시간 + 2시간, 총 4시간</td>
-    </tr><tr>
-      <td>3</td>
-      <td><a href="03_동아정밀공업사.html">동아정밀공업사</a></td>
-      <td>2025년 3월 7일(금) (확정일 2월 11일)</td>
-      <td>6시간 (전체 워크숍은 안전교육 1H+AI강의 1H 포함 총 8시간)</td>
-    </tr><tr>
-      <td>4</td>
-      <td><a href="04_대한소방공제회.html">대한소방공제회</a></td>
-      <td>2025년 6월 중 1박2일 (확정일 2월 27일)</td>
-      <td>2시간 + 2시간</td>
-    </tr><tr>
-      <td>5</td>
-      <td><a href="05_지니언스.html">지니언스</a></td>
-      <td>2025년 5월~6월 (확정일 2월 28일)</td>
-      <td>정은교 4시간 + 오경희 2시간 (제안서 상 프로그램 구성은 4H×2 + 6H×2)</td>
-    </tr><tr>
-      <td>6</td>
-      <td><a href="06_에스넷그룹.html">에스넷그룹</a></td>
-      <td>2025년 3월 6일(목) 오후 (확정일 2월 5일)</td>
-      <td>2시간 + 2시간 (그룹별 4시간)</td>
-    </tr><tr>
-      <td>7</td>
-      <td><a href="07_구로(신입사원입문교육).html">구로 (신입사원 입문교육)</a></td>
-      <td>2025년 4월 16일(수) 13:00~17:00 (확정일 3월 14일)</td>
-      <td>4시간</td>
-    </tr><tr>
-      <td>8</td>
-      <td><a href="08_제이솔루션.html">제이솔루션</a></td>
-      <td>2025년 4월 9일(수) 09:30~16:30 (확정일 3월 19일)</td>
-      <td>4시간 또는 6시간(대상별 택1)</td>
-    </tr><tr>
-      <td>9</td>
-      <td><a href="09_광주문화재단.html">광주문화재단</a></td>
-      <td>2025년 4월 28일 또는 30일 오후 (확정일 3월 25일)</td>
-      <td>3시간 + 4시간</td>
-    </tr><tr>
-      <td>10</td>
-      <td><a href="10_(주)코디.html">(주)코디</a></td>
-      <td>2025년 4월 중 (확정일 3월 27일)</td>
-      <td>6시간</td>
-    </tr><tr>
-      <td>11</td>
-      <td><a href="11_청주소재기업(중간관리자).html">청주소재 기업 (중간관리자)</a></td>
-      <td>2025년 4월 18~19일 (확정일 3월 27일)</td>
-      <td>3시간(이형국) + 6시간(정은교)</td>
-    </tr><tr>
-      <td>12</td>
-      <td><a href="12_매스코.html">매스코</a></td>
-      <td>2025년 5월~6월</td>
-      <td>4시간~6시간 (정은교 담당 모듈별)</td>
-    </tr><tr>
-      <td>13</td>
-      <td><a href="13_상화.html">상화</a></td>
-      <td>2025년 4월 11일 (일시 미정, 2시간)</td>
-      <td>2시간</td>
-    </tr><tr>
-      <td>14</td>
-      <td><a href="14_메타크래프트.html">메타크래프트</a></td>
-      <td>2025년 5월~6월 (확정일 4월 16일)</td>
-      <td>2시간 + 4시간</td>
-    </tr><tr>
-      <td>15</td>
-      <td><a href="15_은평문화재단.html">은평문화재단</a></td>
-      <td>2025년 5월~7월 (확정일 5월 12일)</td>
-      <td>4시간(변화관리 리더십) 외 팔로우십 병행</td>
-    </tr><tr>
-      <td>16</td>
-      <td><a href="16_서일.html">서일</a></td>
-      <td>2025년 5월 30일경 (확정일 5월 2일)</td>
-      <td>2시간</td>
-    </tr><tr>
-      <td>17</td>
-      <td><a href="17_탐코미디어.html">탐코미디어</a></td>
-      <td>2025년 5월 중 (확정일 5월 8일)</td>
-      <td>4시간</td>
-    </tr><tr>
-      <td>18</td>
-      <td><a href="18_대구도시개발공사.html">대구도시개발공사</a></td>
-      <td>2025년 7월 28일(월)~30일(수), 2박3일 (확정일 5월 9일)</td>
-      <td>정은교 담당 '소통과 조직융화' 약 6시간 (전체 워크숍 2박3일)</td>
-    </tr><tr>
-      <td>19</td>
-      <td><a href="19_무역안보관리원.html">무역안보관리원</a></td>
-      <td>2025년 7월 1일~4일 중 (확정일 6월 18일)</td>
-      <td>4시간</td>
-    </tr><tr>
-      <td>20</td>
-      <td><a href="20_딜리버리랩.html">딜리버리랩</a></td>
-      <td>2025년 6월 26일 또는 27일 (확정일 6월 5일)</td>
-      <td>정은교 2시간(MBTI) + 오경희 2시간(사례), 총 6시간 구성</td>
-    </tr><tr>
-      <td>21</td>
-      <td><a href="21_비앤빛안과.html">비앤빛안과</a></td>
-      <td>2025년 가을 예정 (확정일 6월 6일)</td>
-      <td>3시간(스마트 리더십) 외 변화관리 리더십 병행</td>
-    </tr><tr>
-      <td>22</td>
-      <td><a href="22_SIMOAC(SIMPAC).html">SIMOAC(SIMPAC)</a></td>
-      <td>2025년 (일정 미정, 2박3일) (확정일 6월 9일)</td>
-      <td>정은교 6시간(소통) + 이형국 3시간(신입 마음관리)</td>
-    </tr>
-    </table>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Leader Campus 홈">
+      <span class="mark">LC</span>
+      <span>LEADER CAMPUS</span>
+    </a>
+    <nav aria-label="주요 메뉴">
+      <ul>
+        <li><a href="#programs">강의 분야</a></li>
+        <li><a href="#approach">강의 방식</a></li>
+        <li><a href="#profile">강사 소개</a></li>
+        <li><a href="programs.html">교육과정 개요</a></li>
+        <li><a href="#contact">교육 문의</a></li>
+      </ul>
+    </nav>
   </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">LEADERSHIP · COMMUNICATION · CHANGE</span>
+        <h1>사람을 이해하고,<br>관계를 연결하고,<br><em>변화를 실행하는 교육</em></h1>
+        <p>Leader Campus는 실제 직장 현장의 문제를 출발점으로 리더십, 소통, 변화관리, 조직문화와 AI 활용을 연결합니다. 듣고 끝나는 강의보다 질문하고 토론하고 실습하며 스스로 답을 찾는 교육을 지향합니다.</p>
+        <div class="cta">
+          <a class="btn primary" href="#programs">대표 강의 보기</a>
+          <a class="btn secondary" href="programs.html">2025 교육과정 개요서 →</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <div class="label">JEONG EUN-KYO · FACILITATOR</div>
+        <h2>정은교 강사의 교육은<br>‘정답 전달’보다 ‘현장 적용’에 집중합니다.</h2>
+        <ul>
+          <li>실제 직장 경험을 바탕으로 한 사례 중심 교육</li>
+          <li>PTS 심리유형을 활용한 자기·타인 이해</li>
+          <li>질문·토론·역할활동 중심의 참여형 진행</li>
+          <li>리더십 주제와 AI 업무 활용을 연결한 실습</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section id="programs">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Core Programs</div>
+          <h2 class="section-title">현장에서 바로 쓰는<br>조직·리더십 교육</h2>
+        </div>
+        <p class="lead">대상과 조직 상황에 따라 2시간·4시간·6시간 과정, 워크숍형 과정으로 재구성할 수 있습니다.</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card">
+          <div class="num">01 · CHANGE</div>
+          <h3>변화관리 리더십</h3>
+          <p>변화 상황에서 리더의 역할, 구성원의 저항 이해, 유형별 커뮤니케이션과 실행 리더십을 다룹니다.</p>
+        </article>
+        <article class="card">
+          <div class="num">02 · COMMUNICATION</div>
+          <h3>조직 소통 & 갈등관리</h3>
+          <p>갈등의 원인을 사람의 문제로만 보지 않고 관점·욕구·소통 방식의 차이로 분석하고 대화 전략을 연습합니다.</p>
+        </article>
+        <article class="card">
+          <div class="num">03 · AI × LEADERSHIP</div>
+          <h3>AI × 리더십 · 업무활용</h3>
+          <p>리더십 교육에 생성형 AI 활용을 결합해 질문, 회의, 피드백, 문서화, 의사결정 지원 등 현업 적용을 실습합니다.</p>
+        </article>
+        <article class="card">
+          <div class="num">04 · PTS</div>
+          <h3>심리유형 기반 팀빌딩</h3>
+          <p>PTS 심리유형을 활용해 나와 동료의 행동·소통 차이를 이해하고 팀 내 협업 방식을 구체화합니다.</p>
+        </article>
+        <article class="card">
+          <div class="num">05 · CULTURE</div>
+          <h3>팔로워십 & 조직문화</h3>
+          <p>리더와 구성원이 함께 만드는 조직문화를 살펴보고, 주도적 팔로워십과 상호 책임의 문화를 설계합니다.</p>
+        </article>
+        <article class="card">
+          <div class="num">06 · WELLBEING</div>
+          <h3>직장인 스트레스 관리</h3>
+          <p>직장인의 스트레스 원인을 점검하고 자기이해와 관계관리 관점에서 회복과 건강한 업무 리듬을 탐색합니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach" class="approach">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Learning Approach</div>
+          <h2 class="section-title">강사는 말하고,<br>수강생은 듣기만 하는 교육을 넘어서</h2>
+        </div>
+      </div>
+      <div class="approach-grid">
+        <div class="quote">
+          <p>“좋은 교육은 정답을 대신 말해주는 시간이 아니라, 자신의 경험을 다시 보고 스스로 다음 행동을 선택하게 만드는 시간이어야 합니다.”</p>
+          <small>Leader Campus 교육 설계 방향</small>
+        </div>
+        <div class="principles">
+          <div class="principle"><strong>질문</strong><span>강사의 질문으로 자신의 경험과 행동을 돌아봅니다.</span></div>
+          <div class="principle"><strong>대화</strong><span>동료의 경험과 관점을 들으며 해석의 폭을 넓힙니다.</span></div>
+          <div class="principle"><strong>실습</strong><span>역할활동·유형별 대화·AI 활용 등 직접 해보며 익힙니다.</span></div>
+          <div class="principle"><strong>적용</strong><span>교육장에서 끝내지 않고 ‘내일 무엇을 다르게 할지’를 정리합니다.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="profile">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Instructor</div>
+          <h2 class="section-title">정은교 강사</h2>
+        </div>
+        <p class="lead">조직의 실제 경험과 사람에 대한 이해를 연결해, 리더와 구성원이 함께 답을 찾도록 돕는 퍼실리테이션형 강의를 지향합니다.</p>
+      </div>
+      <div class="profile-grid">
+        <div class="profile-visual">
+          <div class="initial">JEK</div>
+          <h3>정은교</h3>
+          <p>Leader Campus · 조직개발 & 리더십 강사</p>
+        </div>
+        <div class="profile-box">
+          <h3>주요 경력 및 활동</h3>
+          <ul class="profile-list">
+            <li><strong>한국방송광고진흥공사</strong> 수석전문위원 (1998–2025)</li>
+            <li><strong>크리비즈 교육사업본부</strong> 이사 · 대표강사</li>
+            <li><strong>인컬리지 조직개발그룹</strong> 그룹장 · 대표강사</li>
+            <li><strong>네이버 MBTI & HEALTH 심리카페</strong> 대표 상담사</li>
+            <li><strong>고려대학교</strong> 졸업</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="program-cta">
+        <div>
+          <div class="kicker">Lecture Archive</div>
+          <h3>실제 교육과정 개요를 확인해 보세요.</h3>
+          <p>현재 사이트에 정리되어 있던 2025년 22개 교육과정 개요서를 별도 페이지에서 그대로 확인할 수 있습니다.</p>
+        </div>
+        <a class="btn" href="programs.html">교육과정 개요서 보기 →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container contact-box">
+      <div>
+        <div class="kicker" style="color:#9fc1ee">Education Inquiry</div>
+        <h2>조직의 상황에서<br>교육을 시작합니다.</h2>
+        <p>정해진 강의를 그대로 반복하기보다 교육 대상, 조직의 고민, 시간, 기대 행동을 확인한 뒤 과정과 실습을 조정합니다.</p>
+      </div>
+      <div class="contact-note">
+        <strong>교육 문의 시 함께 알려주시면 좋습니다.</strong>
+        <ul>
+          <li>교육 대상과 예상 인원</li>
+          <li>현재 조직에서 가장 해결하고 싶은 문제</li>
+          <li>희망 주제와 교육 시간</li>
+          <li>희망 일정 및 교육 장소</li>
+        </ul>
+        <!-- 연락 이메일/전화번호를 공개하고 싶다면 이 영역에 추가하세요. -->
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <span>© 2026 Leader Campus · 정은교</span>
+    <span>Leadership · Communication · Change · AI</span>
+  </div>
+</footer>
 </body>
 </html>
