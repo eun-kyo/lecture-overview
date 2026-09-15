@@ -107,6 +107,18 @@
     .num{font-size:12px; color:var(--blue); font-weight:900; letter-spacing:1.2px}
     .card h3{margin:10px 0 10px; color:var(--navy); font-size:21px; line-height:1.35}
     .card p{margin:0; color:var(--muted); font-size:14.5px}
+
+    .pts-feature{background:linear-gradient(135deg,#0f2748 0%,#173b6c 60%,#255a9d 100%);color:white}
+    .pts-feature .kicker{color:#f0ca88}
+    .pts-feature h2.section-title{color:white}
+    .pts-feature .lead{color:#dbe6f3}
+    .pts-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .pts-card{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);border-radius:22px;padding:28px}
+    .pts-card .stage{font-size:12px;font-weight:900;letter-spacing:1.2px;color:#f0ca88}
+    .pts-card h3{font-size:25px;margin:8px 0 10px}
+    .pts-card p{color:#e3ebf6;margin:0 0 18px}
+    .pts-card ul{margin:0 0 20px;padding-left:20px;color:#dbe6f3}
+    .pts-card .btn{background:white;color:var(--navy)}
     .approach{background:white}
     .approach-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px}
     .quote{
@@ -163,7 +175,7 @@
       .hero-grid{min-height:auto;padding:70px 0}
       .hero-card{max-width:600px}
       .grid-3{grid-template-columns:1fr 1fr}
-      .approach-grid{grid-template-columns:1fr}
+      .approach-grid,.pts-grid{grid-template-columns:1fr}
       .program-cta{grid-template-columns:1fr;padding:32px}
     }
     @media (max-width:620px){
@@ -271,6 +283,34 @@
     </div>
   </section>
 
+  <section id="pts-professional" class="pts-feature">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="kicker">PTA Professional Program</div>
+          <h2 class="section-title">PTS를 설명하는 강사를 넘어,<br>탐색이 일어나게 하는 강사로</h2>
+        </div>
+        <p class="lead">PTS를 활용해 강의·상담하려는 전문가를 위한 단계형 교육과정입니다. 유형은 출발점이고, 개인의 언어가 목적지라는 관점에서 질문·기다림·반영·프로그램 설계 역량을 훈련합니다.</p>
+      </div>
+      <div class="pts-grid">
+        <article class="pts-card">
+          <div class="stage">STEP 1 · EXPLORATORY</div>
+          <h3>PTA 탐색과정</h3>
+          <p>먼저 참가자로서 나를 탐색하고, 동시에 미래 강사·상담자의 시선으로 질문과 피드백의 기본 자세를 익힙니다.</p>
+          <ul><li>PTS 기본 원리와 자기탐색</li><li>주요 심리지표와 Mind Play</li><li>좋은 질문 · 충분한 기다림 · 정확한 반영</li></ul>
+          <a class="btn" href="pta-exploratory.html">과정 상세 보기 →</a>
+        </article>
+        <article class="pts-card">
+          <div class="stage">STEP 2 · INSTRUCTOR</div>
+          <h3>PTA 강사과정</h3>
+          <p>PTS의 다양한 렌즈를 교육 목적에 맞게 선택하고, 참여형 활동과 프로그램으로 설계·진행하는 역량을 익힙니다.</p>
+          <ul><li>4그룹화 · 행동지표 · 심리기능 · 가치지표</li><li>도형심리탐색 · PTS-ART</li><li>2H·3H·4H·7H+ 프로그램 설계</li></ul>
+          <a class="btn" href="pta-instructor.html">과정 상세 보기 →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section id="approach" class="approach">
     <div class="container">
       <div class="section-head">
@@ -329,7 +369,7 @@
         <div>
           <div class="kicker">Lecture Archive</div>
           <h3>실제 교육과정 개요를 확인해 보세요.</h3>
-          <p>현재 사이트에 정리되어 있던 2025년 22개 교육과정 개요서를 별도 페이지에서 그대로 확인할 수 있습니다.</p>
+          <p>PTA 전문과정 개요와 2025년 22개 교육과정 개요서를 한 페이지에서 확인할 수 있습니다.</p>
         </div>
         <a class="btn" href="programs.html">교육과정 개요서 보기 →</a>
       </div>
