@@ -1,407 +1,214 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Leader Campus 정은교 강사 공식 홈페이지. 변화관리 리더십, 조직 소통·갈등관리, AI×리더십, PTS 심리유형 기반 팀빌딩, 조직문화, 스트레스 관리 교육.">
-  <meta name="theme-color" content="#10284b">
-  <meta property="og:title" content="Leader Campus | 정은교">
-  <meta property="og:description" content="사람을 이해하고, 관계를 연결하고, 변화를 실행하는 리더십 교육">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://leadercampus.co.kr/">
-  <title>Leader Campus | 정은교</title>
-  <style>
-    :root{
-      --navy:#10284b;
-      --navy2:#183a6a;
-      --blue:#2e5aa8;
-      --sky:#eaf2ff;
-      --ink:#18202a;
-      --muted:#667085;
-      --line:#dce4ef;
-      --paper:#ffffff;
-      --bg:#f5f7fb;
-      --accent:#d7a95b;
-      --shadow:0 18px 55px rgba(16,40,75,.11);
-      --radius:22px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      color:var(--ink);
-      background:var(--bg);
-      font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
-      line-height:1.65;
-      word-break:keep-all;
-    }
-    a{color:inherit}
-    .container{width:min(1120px, calc(100% - 40px)); margin:0 auto}
-    header{
-      position:sticky; top:0; z-index:50;
-      background:rgba(255,255,255,.92);
-      backdrop-filter:blur(12px);
-      border-bottom:1px solid rgba(220,228,239,.8);
-    }
-    .nav{
-      height:72px; display:flex; align-items:center; justify-content:space-between; gap:24px;
-    }
-    .brand{display:flex; align-items:center; gap:12px; text-decoration:none; font-weight:900; color:var(--navy)}
-    .mark{
-      width:38px; height:38px; border-radius:12px;
-      background:linear-gradient(145deg,var(--navy),var(--blue));
-      color:white; display:grid; place-items:center; font-size:14px; letter-spacing:-.5px;
-      box-shadow:0 8px 22px rgba(16,40,75,.22);
-    }
-    .brand span:last-child{font-size:18px; letter-spacing:.3px}
-    nav ul{display:flex; list-style:none; gap:26px; padding:0; margin:0; font-size:14px; font-weight:750}
-    nav a{text-decoration:none; color:#384250}
-    nav a:hover{color:var(--blue)}
-    .hero{
-      background:
-        radial-gradient(circle at 80% 15%, rgba(215,169,91,.18), transparent 28%),
-        linear-gradient(135deg,#0e2443 0%, #173b6c 58%, #255a9d 100%);
-      color:white;
-      overflow:hidden;
-    }
-    .hero-grid{
-      min-height:620px; display:grid; grid-template-columns:1.25fr .75fr; gap:54px; align-items:center;
-      padding:86px 0 76px;
-    }
-    .eyebrow{
-      display:inline-flex; gap:8px; align-items:center; padding:7px 12px;
-      border:1px solid rgba(255,255,255,.25); border-radius:999px;
-      color:#e7effc; font-size:13px; font-weight:800; letter-spacing:.7px;
-      background:rgba(255,255,255,.06);
-    }
-    .hero h1{font-size:clamp(40px,5.2vw,68px); line-height:1.12; letter-spacing:-2.2px; margin:22px 0 24px}
-    .hero h1 em{font-style:normal; color:#f0ca88}
-    .hero p{font-size:18px; color:#e8eef7; max-width:720px; margin:0}
-    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:34px}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:8px;
-      min-height:48px; padding:0 20px; border-radius:12px; text-decoration:none; font-weight:800;
-      border:1px solid transparent;
-    }
-    .btn.primary{background:white; color:var(--navy)}
-    .btn.secondary{border-color:rgba(255,255,255,.32); color:white; background:rgba(255,255,255,.05)}
-    .hero-card{
-      padding:30px; border-radius:26px;
-      background:rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.18);
-      box-shadow:0 30px 80px rgba(0,0,0,.16);
-    }
-    .hero-card .label{font-size:12px; font-weight:900; letter-spacing:1.6px; color:#cbd9ed}
-    .hero-card h2{margin:10px 0 18px; font-size:26px; line-height:1.32}
-    .hero-card ul{list-style:none; padding:0; margin:0; display:grid; gap:11px}
-    .hero-card li{padding:12px 14px; border-radius:12px; background:rgba(255,255,255,.08); color:#edf3fb; font-size:14px}
-    section{padding:92px 0}
-    .section-head{display:flex; align-items:end; justify-content:space-between; gap:24px; margin-bottom:34px}
-    .kicker{font-size:13px; color:var(--blue); font-weight:900; letter-spacing:1.4px; text-transform:uppercase}
-    h2.section-title{font-size:clamp(30px,3.5vw,44px); line-height:1.25; margin:8px 0 0; letter-spacing:-1.4px; color:var(--navy)}
-    .lead{color:var(--muted); max-width:620px; margin:0; font-size:16px}
-    .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
-    .card{
-      background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:26px;
-      box-shadow:0 10px 30px rgba(16,40,75,.045);
-    }
-    .num{font-size:12px; color:var(--blue); font-weight:900; letter-spacing:1.2px}
-    .card h3{margin:10px 0 10px; color:var(--navy); font-size:21px; line-height:1.35}
-    .card p{margin:0; color:var(--muted); font-size:14.5px}
-
-    .pts-feature{background:linear-gradient(135deg,#0f2748 0%,#173b6c 60%,#255a9d 100%);color:white}
-    .pts-feature .kicker{color:#f0ca88}
-    .pts-feature h2.section-title{color:white}
-    .pts-feature .lead{color:#dbe6f3}
-    .pts-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .pts-card{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);border-radius:22px;padding:28px}
-    .pts-card .stage{font-size:12px;font-weight:900;letter-spacing:1.2px;color:#f0ca88}
-    .pts-card h3{font-size:25px;margin:8px 0 10px}
-    .pts-card p{color:#e3ebf6;margin:0 0 18px}
-    .pts-card ul{margin:0 0 20px;padding-left:20px;color:#dbe6f3}
-    .pts-card .btn{background:white;color:var(--navy)}
-    .approach{background:white}
-    .approach-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px}
-    .quote{
-      border-radius:var(--radius); padding:34px; background:linear-gradient(145deg,var(--navy),var(--navy2)); color:white;
-      min-height:100%;
-    }
-    .quote p{font-size:28px; line-height:1.45; margin:0 0 18px; letter-spacing:-.8px; font-weight:800}
-    .quote small{color:#cdd9e9}
-    .principles{display:grid; grid-template-columns:1fr 1fr; gap:16px}
-    .principle{border:1px solid var(--line); border-radius:18px; padding:22px; background:#fbfcfe}
-    .principle strong{display:block; color:var(--navy); margin-bottom:7px}
-    .profile-grid{display:grid; grid-template-columns:.8fr 1.2fr; gap:28px; align-items:stretch}
-    .profile-visual{
-      border-radius:var(--radius); padding:34px; color:white; min-height:390px;
-      background:
-        linear-gradient(180deg,rgba(16,40,75,.05),rgba(16,40,75,.62)),
-        linear-gradient(145deg,#2e5aa8,#10284b);
-      display:flex; flex-direction:column; justify-content:flex-end;
-    }
-    .profile-visual .initial{font-size:96px; font-weight:950; opacity:.16; line-height:1}
-    .profile-visual h3{font-size:30px; margin:10px 0 4px}
-    .profile-visual p{margin:0;color:#dfe8f4}
-    .profile-box{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:32px}
-    .profile-box h3{color:var(--navy);font-size:25px;margin:0 0 18px}
-    .profile-list{display:grid;gap:0;margin:0;padding:0;list-style:none}
-    .profile-list li{padding:13px 0;border-bottom:1px solid #edf1f6;color:#384250}
-    .profile-list li:last-child{border-bottom:0}
-    .program-cta{
-      border-radius:28px; padding:46px;
-      background:linear-gradient(135deg,#eaf2ff,#f8fbff 55%,#fff7e8);
-      border:1px solid #d7e4f6; display:grid; grid-template-columns:1fr auto; gap:30px; align-items:center;
-    }
-    .program-cta h3{font-size:31px; color:var(--navy); margin:0 0 8px; letter-spacing:-.8px}
-    .program-cta p{margin:0;color:#586577}
-    .program-cta .btn{background:var(--navy);color:white}
-    .contact{
-      background:#0f2748;color:white;
-    }
-    .contact-box{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
-    .contact h2{font-size:42px;line-height:1.25;margin:0 0 18px}
-    .contact p{color:#d7e1ee;margin:0}
-    .contact-note{
-      background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);
-      border-radius:20px;padding:28px;
-    }
-    .contact-note strong{display:block;font-size:18px;margin-bottom:10px}
-    .contact-note ul{margin:0;padding-left:20px;color:#dbe5f1}
-    footer{background:#0b1d36;color:#aebdd0;padding:28px 0;font-size:13px}
-    footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-    .mobile-menu{display:none}
-    @media (max-width:900px){
-      nav{display:none}
-      .hero-grid,.profile-grid,.contact-box{grid-template-columns:1fr}
-      .hero-grid{min-height:auto;padding:70px 0}
-      .hero-card{max-width:600px}
-      .grid-3{grid-template-columns:1fr 1fr}
-      .approach-grid,.pts-grid{grid-template-columns:1fr}
-      .program-cta{grid-template-columns:1fr;padding:32px}
-    }
-    @media (max-width:620px){
-      .container{width:min(100% - 28px,1120px)}
-      .nav{height:64px}
-      .hero h1{letter-spacing:-1.3px}
-      .hero p{font-size:16px}
-      section{padding:68px 0}
-      .grid-3,.principles{grid-template-columns:1fr}
-      .section-head{display:block}
-      .lead{margin-top:14px}
-      .card{padding:22px}
-      .quote p{font-size:23px}
-      .program-cta h3{font-size:26px}
-      .contact h2{font-size:34px}
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Leader Campus 정은교 강사의 리더십·변화관리, 소통·팀워크, 강사·전문가 성장 교육 프로그램.">
+<title>Leader Campus | 정은교</title>
+<style>
+:root{
+  --navy:#10284b;--blue:#2e5aa8;--sky:#eef5ff;--ink:#172033;--muted:#667085;
+  --bg:#f4f6fb;--line:#d7dfef;--gold:#c89a4b;--cream:#fff8ea;--white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",sans-serif;color:var(--ink);background:var(--bg);line-height:1.68}
+a{color:inherit}
+.container{max-width:1120px;margin:0 auto;padding:0 22px}
+.topbar{background:#fff;border-bottom:1px solid #e6ebf3;position:sticky;top:0;z-index:10}
+.nav{height:68px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{text-decoration:none;font-size:20px;font-weight:950;color:var(--navy);letter-spacing:.4px}
+.navlinks{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.navlinks a{text-decoration:none;color:#475467;font-size:14px;font-weight:800}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:10px;padding:12px 17px;font-weight:850;background:var(--navy);color:#fff;border:1px solid var(--navy)}
+.btn.alt{background:#fff;color:var(--navy);border-color:var(--line)}
+.kicker{font-size:12px;letter-spacing:1.2px;font-weight:950;color:var(--blue);text-transform:uppercase}
+.hero{background:linear-gradient(135deg,#0d2342 0%,#173b6e 62%,#2e5aa8 100%);color:#fff;padding:78px 0 68px}
+.hero h1{font-size:44px;line-height:1.22;margin:10px 0 16px;letter-spacing:-1.5px}
+.hero p{font-size:18px;color:#dce8f8;max-width:780px;margin:0}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.hero .btn{background:#fff;color:var(--navy);border-color:#fff}
+.hero .btn.alt{background:transparent;color:#fff;border-color:#7897bd}
+.section{padding:70px 0}
+.section.white{background:#fff}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:flex-end;margin-bottom:28px}
+.section-title{font-size:31px;line-height:1.3;color:var(--navy);margin:5px 0 0;letter-spacing:-.7px}
+.lead{color:#58677a;max-width:680px;margin:0}
+.cat-title{display:flex;align-items:end;justify-content:space-between;gap:18px;margin:38px 0 14px}
+.cat-title h2{margin:0;color:var(--navy);font-size:24px}
+.cat-title span{font-size:13px;color:var(--blue);font-weight:900}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:22px;display:flex;flex-direction:column;min-height:300px;box-shadow:0 2px 12px rgba(31,56,100,.04)}
+.card .num{font-size:11px;font-weight:950;letter-spacing:.9px;color:var(--blue)}
+.card h3{font-size:20px;line-height:1.4;color:var(--navy);margin:8px 0 7px}
+.card .subline{color:#6a5a3d;font-weight:800;font-size:13px;margin-bottom:10px}
+.card p{font-size:14px;color:#59677a;margin:0 0 12px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:12px}
+.tag{font-size:12px;padding:5px 8px;border-radius:999px;background:#f0f4fa;color:#31517d;font-weight:800}
+.card .more{margin-top:15px;color:var(--blue);font-size:13px;text-decoration:none;font-weight:900}
+.philosophy{background:#0d203b;color:#fff}
+.philosophy .section-title{color:#fff}
+.quote-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:18px}
+.quote-box,.principles{border:1px solid #294564;background:#132b4b;border-radius:15px;padding:24px}
+.quote-box p{font-size:22px;line-height:1.6;margin:0}
+.quote-box small{display:block;color:#aec0d8;margin-top:16px}
+.principle{padding:10px 0;border-bottom:1px solid #294564}
+.principle:last-child{border-bottom:0}
+.principle b{display:inline-block;width:62px;color:#fff}
+.principle span{color:#c2d0e2}
+.profile{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px}
+.profile-card,.profile-copy{background:#fff;border:1px solid var(--line);border-radius:15px;padding:25px}
+.profile-card h3{font-size:27px;color:var(--navy);margin:0 0 7px}
+.profile-copy h3{color:var(--navy);margin-top:0}
+footer{background:#09182c;color:#aabbd0;padding:30px 0;font-size:13px}
+.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:900px){.cards{grid-template-columns:1fr 1fr}.quote-grid,.profile{grid-template-columns:1fr}.hero h1{font-size:38px}}
+@media(max-width:620px){.cards{grid-template-columns:1fr}.navlinks{display:none}.hero{padding:58px 0}.hero h1{font-size:31px}.section{padding:50px 0}.section-head{display:block}.section-title{font-size:27px}}
+</style>
 </head>
 <body>
-<header>
+<header class="topbar">
   <div class="container nav">
-    <a class="brand" href="#top" aria-label="Leader Campus 홈">
-      <span class="mark">LC</span>
-      <span>LEADER CAMPUS</span>
-    </a>
-    <nav aria-label="주요 메뉴">
-      <ul>
-        <li><a href="#programs">강의 분야</a></li>
-        <li><a href="#approach">강의 방식</a></li>
-        <li><a href="#profile">강사 소개</a></li>
-        <li><a href="programs.html">교육과정 개요</a></li>
-        <li><a href="#contact">교육 문의</a></li>
-      </ul>
+    <a class="brand" href="index.html">LEADER CAMPUS</a>
+    <nav class="navlinks">
+      <a href="#programs">교육 프로그램</a>
+      <a href="#approach">교육 방식</a>
+      <a href="#profile">강사 소개</a>
+      <a href="programs.html">8개 과정 한눈에 보기</a>
     </nav>
   </div>
 </header>
 
-<main id="top">
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="eyebrow">LEADERSHIP · COMMUNICATION · CHANGE</span>
-        <h1>사람을 이해하고,<br>관계를 연결하고,<br><em>변화를 실행하는 교육</em></h1>
-        <p>Leader Campus는 실제 직장 현장의 문제를 출발점으로 리더십, 소통, 변화관리, 조직문화와 AI 활용을 연결합니다. 듣고 끝나는 강의보다 질문하고 토론하고 실습하며 스스로 답을 찾는 교육을 지향합니다.</p>
-        <div class="cta">
-          <a class="btn primary" href="#programs">대표 강의 보기</a>
-          <a class="btn secondary" href="programs.html">2025 교육과정 개요서 →</a>
-        </div>
-      </div>
-      <aside class="hero-card">
-        <div class="label">JEONG EUN-KYO · FACILITATOR</div>
-        <h2>정은교 강사의 교육은<br>‘정답 전달’보다 ‘현장 적용’에 집중합니다.</h2>
-        <ul>
-          <li>실제 직장 경험을 바탕으로 한 사례 중심 교육</li>
-          <li>PTS 심리유형을 활용한 자기·타인 이해</li>
-          <li>질문·토론·역할활동 중심의 참여형 진행</li>
-          <li>리더십 주제와 AI 업무 활용을 연결한 실습</li>
-        </ul>
-      </aside>
-    </div>
-  </section>
-
-  <section id="programs">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <div class="kicker">Core Programs</div>
-          <h2 class="section-title">현장에서 바로 쓰는<br>조직·리더십 교육</h2>
-        </div>
-        <p class="lead">대상과 조직 상황에 따라 2시간·4시간·6시간 과정, 워크숍형 과정으로 재구성할 수 있습니다.</p>
-      </div>
-
-      <div class="grid-3">
-        <article class="card">
-          <div class="num">01 · CHANGE</div>
-          <h3>변화관리 리더십</h3>
-          <p>변화 상황에서 리더의 역할, 구성원의 저항 이해, 유형별 커뮤니케이션과 실행 리더십을 다룹니다.</p>
-        </article>
-        <article class="card">
-          <div class="num">02 · COMMUNICATION</div>
-          <h3>조직 소통 & 갈등관리</h3>
-          <p>갈등의 원인을 사람의 문제로만 보지 않고 관점·욕구·소통 방식의 차이로 분석하고 대화 전략을 연습합니다.</p>
-        </article>
-        <article class="card">
-          <div class="num">03 · AI × LEADERSHIP</div>
-          <h3>AI × 리더십 · 업무활용</h3>
-          <p>리더십 교육에 생성형 AI 활용을 결합해 질문, 회의, 피드백, 문서화, 의사결정 지원 등 현업 적용을 실습합니다.</p>
-        </article>
-        <article class="card">
-          <div class="num">04 · PTS</div>
-          <h3>심리유형 기반 팀빌딩</h3>
-          <p>PTS 심리유형을 활용해 나와 동료의 행동·소통 차이를 이해하고 팀 내 협업 방식을 구체화합니다.</p>
-        </article>
-        <article class="card">
-          <div class="num">05 · CULTURE</div>
-          <h3>팔로워십 & 조직문화</h3>
-          <p>리더와 구성원이 함께 만드는 조직문화를 살펴보고, 주도적 팔로워십과 상호 책임의 문화를 설계합니다.</p>
-        </article>
-        <article class="card">
-          <div class="num">06 · WELLBEING</div>
-          <h3>직장인 스트레스 관리</h3>
-          <p>직장인의 스트레스 원인을 점검하고 자기이해와 관계관리 관점에서 회복과 건강한 업무 리듬을 탐색합니다.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="pts-professional" class="pts-feature">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <div class="kicker">PTA Professional Program</div>
-          <h2 class="section-title">PTS를 설명하는 강사를 넘어,<br>탐색이 일어나게 하는 강사로</h2>
-        </div>
-        <p class="lead">PTS를 활용해 강의·상담하려는 전문가를 위한 단계형 교육과정입니다. 유형은 출발점이고, 개인의 언어가 목적지라는 관점에서 질문·기다림·반영·프로그램 설계 역량을 훈련합니다.</p>
-      </div>
-      <div class="pts-grid">
-        <article class="pts-card">
-          <div class="stage">STEP 1 · EXPLORATORY</div>
-          <h3>PTA 탐색과정</h3>
-          <p>먼저 참가자로서 나를 탐색하고, 동시에 미래 강사·상담자의 시선으로 질문과 피드백의 기본 자세를 익힙니다.</p>
-          <ul><li>PTS 기본 원리와 자기탐색</li><li>주요 심리지표와 Mind Play</li><li>좋은 질문 · 충분한 기다림 · 정확한 반영</li></ul>
-          <a class="btn" href="pta-exploratory.html">과정 상세 보기 →</a>
-        </article>
-        <article class="pts-card">
-          <div class="stage">STEP 2 · INSTRUCTOR</div>
-          <h3>PTA 강사과정</h3>
-          <p>PTS의 다양한 렌즈를 교육 목적에 맞게 선택하고, 참여형 활동과 프로그램으로 설계·진행하는 역량을 익힙니다.</p>
-          <ul><li>4그룹화 · 행동지표 · 심리기능 · 가치지표</li><li>도형심리탐색 · PTS-ART</li><li>2H·3H·4H·7H+ 프로그램 설계</li></ul>
-          <a class="btn" href="pta-instructor.html">과정 상세 보기 →</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="approach" class="approach">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <div class="kicker">Learning Approach</div>
-          <h2 class="section-title">강사는 말하고,<br>수강생은 듣기만 하는 교육을 넘어서</h2>
-        </div>
-      </div>
-      <div class="approach-grid">
-        <div class="quote">
-          <p>“좋은 교육은 정답을 대신 말해주는 시간이 아니라, 자신의 경험을 다시 보고 스스로 다음 행동을 선택하게 만드는 시간이어야 합니다.”</p>
-          <small>Leader Campus 교육 설계 방향</small>
-        </div>
-        <div class="principles">
-          <div class="principle"><strong>질문</strong><span>강사의 질문으로 자신의 경험과 행동을 돌아봅니다.</span></div>
-          <div class="principle"><strong>대화</strong><span>동료의 경험과 관점을 들으며 해석의 폭을 넓힙니다.</span></div>
-          <div class="principle"><strong>실습</strong><span>역할활동·유형별 대화·AI 활용 등 직접 해보며 익힙니다.</span></div>
-          <div class="principle"><strong>적용</strong><span>교육장에서 끝내지 않고 ‘내일 무엇을 다르게 할지’를 정리합니다.</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="profile">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <div class="kicker">Instructor</div>
-          <h2 class="section-title">정은교 강사</h2>
-        </div>
-        <p class="lead">조직의 실제 경험과 사람에 대한 이해를 연결해, 리더와 구성원이 함께 답을 찾도록 돕는 퍼실리테이션형 강의를 지향합니다.</p>
-      </div>
-      <div class="profile-grid">
-        <div class="profile-visual">
-          <div class="initial">JEK</div>
-          <h3>정은교</h3>
-          <p>Leader Campus · 조직개발 & 리더십 강사</p>
-        </div>
-        <div class="profile-box">
-          <h3>주요 경력 및 활동</h3>
-          <ul class="profile-list">
-            <li><strong>한국방송광고진흥공사</strong> 수석전문위원 (1998–2025)</li>
-            <li><strong>크리비즈 교육사업본부</strong> 이사 · 대표강사</li>
-            <li><strong>인컬리지 조직개발그룹</strong> 그룹장 · 대표강사</li>
-            <li><strong>네이버 MBTI & HEALTH 심리카페</strong> 대표 상담사</li>
-            <li><strong>고려대학교</strong> 졸업</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="program-cta">
-        <div>
-          <div class="kicker">Lecture Archive</div>
-          <h3>실제 교육과정 개요를 확인해 보세요.</h3>
-          <p>PTA 전문과정 개요와 2025년 22개 교육과정 개요서를 한 페이지에서 확인할 수 있습니다.</p>
-        </div>
-        <a class="btn" href="programs.html">교육과정 개요서 보기 →</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="container contact-box">
-      <div>
-        <div class="kicker" style="color:#9fc1ee">Education Inquiry</div>
-        <h2>조직의 상황에서<br>교육을 시작합니다.</h2>
-        <p>정해진 강의를 그대로 반복하기보다 교육 대상, 조직의 고민, 시간, 기대 행동을 확인한 뒤 과정과 실습을 조정합니다.</p>
-      </div>
-      <div class="contact-note">
-        <strong>교육 문의 시 함께 알려주시면 좋습니다.</strong>
-        <ul>
-          <li>교육 대상과 예상 인원</li>
-          <li>현재 조직에서 가장 해결하고 싶은 문제</li>
-          <li>희망 주제와 교육 시간</li>
-          <li>희망 일정 및 교육 장소</li>
-        </ul>
-        <!-- 연락 이메일/전화번호를 공개하고 싶다면 이 영역에 추가하세요. -->
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
+<section class="hero">
   <div class="container">
-    <span>© 2026 Leader Campus · 정은교</span>
-    <span>Leadership · Communication · Change · AI</span>
+    <div class="kicker" style="color:#a9c5e8">LEADER CAMPUS · EUN-KYO JUNG</div>
+    <h1>사람을 이해하고,<br>관계를 연결하고,<br>변화를 실행하는 교육</h1>
+    <p>실제 조직 경험과 심리유형 기반 자기·타인이해, 참여형 퍼실리테이션을 결합해 교육장에서의 깨달음이 현장의 대화와 행동으로 이어지도록 설계합니다.</p>
+    <div class="hero-actions">
+      <a class="btn" href="programs.html">8개 교육과정 한눈에 보기</a>
+      <a class="btn alt" href="#programs">프로그램 살펴보기</a>
+    </div>
   </div>
-</footer>
+</section>
+
+<section id="programs" class="section white">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">8 CORE PROGRAMS</div><h2 class="section-title">세 개의 축으로 정리한<br>Leader Campus 교육 프로그램</h2></div>
+      <p class="lead">기업명이나 과거 강의 실적이 아니라, 현재 제공할 수 있는 교육 프로그램을 중심으로 구성했습니다. 각 과정은 클릭하면 상세 강의개요로 연결됩니다.</p>
+    </div>
+    
+    <div class="cat-title"><div><span>LEADERSHIP & CHANGE</span><h2>리더십·변화관리</h2></div><p class="lead">리더가 자신과 구성원을 이해하고, 관계를 해치지 않으면서 성과와 변화를 이끄는 과정입니다.</p></div>
+    <div class="cards">
+      <article class="card">
+        <div class="num">01 · LEADERSHIP &amp; CHANGE</div>
+        <h3>단호함과 존중 사이, 좋은 리더의 대화법</h3>
+        <div class="subline">기준은 높게, 사람은 낮추지 않게</div>
+        <p>업무 기준은 분명하게 세우고 사람의 가치는 낮추지 않는 ‘단단한 존중’을 연습하는 실전 리더 소통 과정입니다.</p>
+        <div class="tags"><span class="tag">2시간</span><span class="tag">팀장·부장 등 리더급</span></div>
+        <a class="more" href="leader-communication.html">강의개요 보기 →</a>
+      </article>
+      <article class="card">
+        <div class="num">02 · LEADERSHIP &amp; CHANGE</div>
+        <h3>PTS 행동유형을 활용한 팀장 리더십</h3>
+        <div class="subline">나의 리더십을 알고, 다른 유형의 구성원을 움직이는 법</div>
+        <p>PTS 행동지표를 활용해 자신의 리더십 유형과 페르소나를 탐색하고, 서로 다른 유형의 구성원과 소통·회의·의사결정하는 방법을 익히는 과정입니다.</p>
+        <div class="tags"><span class="tag">6시간</span><span class="tag">팀장·중간관리자·리더급</span></div>
+        <a class="more" href="pts-leadership.html">강의개요 보기 →</a>
+      </article>
+      <article class="card">
+        <div class="num">03 · LEADERSHIP &amp; CHANGE</div>
+        <h3>변화하는 조직을 이끄는 변화관리 리더십</h3>
+        <div class="subline">변화저항을 이해하고, 유형에 맞게 움직이게 하는 리더십</div>
+        <p>리더 자신의 심리유형과 리더십 유형을 이해한 뒤, 구성원의 변화저항을 읽고 유형별 소통·피드백으로 변화 참여를 이끄는 과정입니다.</p>
+        <div class="tags"><span class="tag">4시간</span><span class="tag">팀장·중간관리자·변화 추진 리더</span></div>
+        <a class="more" href="change-leadership.html">강의개요 보기 →</a>
+      </article></div>
+    
+    <div class="cat-title"><div><span>COMMUNICATION & TEAM</span><h2>소통·팀워크</h2></div><p class="lead">자기이해에서 타인이해로 확장하고, 다름을 실제 협업과 팀워크의 자원으로 바꾸는 과정입니다.</p></div>
+    <div class="cards">
+      <article class="card">
+        <div class="num">04 · COMMUNICATION &amp; TEAM</div>
+        <h3>MBTI 심리유형을 활용한 자기이해와 소통</h3>
+        <div class="subline">다름을 이해하면 대화가 달라집니다</div>
+        <p>MBTI의 네 가지 선호지표를 통해 나와 동료의 차이를 이해하고, 회의·정보전달·의사결정·업무추진에서 서로 다르게 반응하는 이유를 소통 방법으로 연결합니다.</p>
+        <div class="tags"><span class="tag">2시간</span><span class="tag">전 직원 · 팀 단위 구성원</span></div>
+        <a class="more" href="mbti-communication.html">강의개요 보기 →</a>
+      </article>
+      <article class="card">
+        <div class="num">05 · COMMUNICATION &amp; TEAM</div>
+        <h3>PTS 도형심리를 활용한 소통과 팀워크</h3>
+        <div class="subline">나의 방식에서 우리 팀의 방식으로</div>
+        <p>PTS를 활용해 자신의 심리적 선호와 현재 모습을 탐색하고, EJ·IJ·EP·IP 도형심리유형을 통해 서로 다른 구성원의 니즈와 협업 방식을 이해하는 체험형 팀워크 과정입니다.</p>
+        <div class="tags"><span class="tag">5시간</span><span class="tag">전 직원 · 팀 단위 조직 · 조직개발 워크숍</span></div>
+        <a class="more" href="pts-shape-teamwork.html">강의개요 보기 →</a>
+      </article></div>
+    
+    <div class="cat-title"><div><span>INSTRUCTOR & PROFESSIONAL</span><h2>강사·전문가 성장</h2></div><p class="lead">조직 경험을 교육 콘텐츠로 바꾸고, PTS를 활용한 전문 강사 역량까지 확장하는 과정입니다.</p></div>
+    <div class="cards">
+      <article class="card">
+        <div class="num">06 · INSTRUCTOR &amp; PROFESSIONAL</div>
+        <h3>기업강의, 어떻게 준비하고 설계할 것인가</h3>
+        <div class="subline">조직 경험과 기존 콘텐츠를 기업교육으로 확장하는 실제 과정</div>
+        <p>자신의 경력과 기존 콘텐츠를 기업이 필요로 하는 교육 주제로 번역하고, 실제 기업강의 프로그램과 실행계획으로 설계하는 실전 과정입니다.</p>
+        <div class="tags"><span class="tag">2시간</span><span class="tag">기업강의를 준비하는 강사 · 교육전문가</span></div>
+        <a class="more" href="corporate-lecture-design.html">강의개요 보기 →</a>
+      </article>
+      <article class="card">
+        <div class="num">07 · INSTRUCTOR &amp; PROFESSIONAL</div>
+        <h3>PTA 탐색과정</h3>
+        <div class="subline">PTS를 이해하는 것에서, 사람의 언어를 발견하도록 돕는 시작</div>
+        <p>PTS의 기본 원리를 이해하고 자기탐색을 직접 경험하며, 미래의 강사·상담자로서 참가자가 자신의 언어를 발견하도록 돕는 기본 자세를 익히는 과정입니다.</p>
+        <div class="tags"><span class="tag">총 9시간</span><span class="tag">PTS를 활용한 강의·상담과 자기탐색에 관심 있는 예비 전문가</span></div>
+        <a class="more" href="pta-exploratory.html">강의개요 보기 →</a>
+      </article>
+      <article class="card">
+        <div class="num">08 · INSTRUCTOR &amp; PROFESSIONAL</div>
+        <h3>PTA 강사과정</h3>
+        <div class="subline">PTS를 설명하는 강사를 넘어, 탐색이 일어나게 하는 강사로</div>
+        <p>PTS의 다양한 렌즈를 교육목표와 시간에 맞게 선택하고, 참여형 활동과 질문·피드백을 통해 실제 교육 프로그램으로 설계·진행하는 역량을 익히는 과정입니다.</p>
+        <div class="tags"><span class="tag">총 6시간</span><span class="tag">PTS 활용 강의를 준비하는 강사 · 상담자 · 교육담당자</span></div>
+        <a class="more" href="pta-instructor.html">강의개요 보기 →</a>
+      </article></div>
+    
+  </div>
+</section>
+
+<section id="approach" class="section philosophy">
+  <div class="container">
+    <div class="section-head"><div><div class="kicker" style="color:#9ebbe0">LEARNING APPROACH</div><h2 class="section-title">정답을 전달하기보다<br>탐색과 대화가 일어나게</h2></div></div>
+    <div class="quote-grid">
+      <div class="quote-box">
+        <p>“좋은 교육은 정답을 대신 말해주는 시간이 아니라, 자신의 경험을 다시 보고 스스로 다음 행동을 선택하게 만드는 시간이어야 합니다.”</p>
+        <small>Leader Campus 교육 설계 방향</small>
+      </div>
+      <div class="principles">
+        <div class="principle"><b>질문</b><span>강사의 질문으로 자신의 경험과 행동을 돌아봅니다.</span></div>
+        <div class="principle"><b>대화</b><span>동료의 경험과 관점을 들으며 해석의 폭을 넓힙니다.</span></div>
+        <div class="principle"><b>실습</b><span>유형별 대화·역할활동·워크시트로 직접 해보며 익힙니다.</span></div>
+        <div class="principle"><b>적용</b><span>교육장에서 끝내지 않고 ‘내일 무엇을 다르게 할지’를 정리합니다.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="profile" class="section">
+  <div class="container">
+    <div class="section-head"><div><div class="kicker">FACILITATOR</div><h2 class="section-title">정은교 강사</h2></div></div>
+    <div class="profile">
+      <div class="profile-card">
+        <h3>조직 경험 기반<br>리더십·소통 강사</h3>
+        <p>오랜 조직생활의 실제 경험과 심리유형 도구, 질문·토론·활동 중심의 퍼실리테이션을 결합합니다.</p>
+      </div>
+      <div class="profile-copy">
+        <h3>주요 전문영역</h3>
+        <p>조직 소통·갈등관리 · 변화관리 리더십 · 팀장 리더십 · 팀빌딩 · 조직문화 · 스트레스 관리 · PTS/MBTI 심리유형 기반 자기·타인이해 · 기업강사 교육</p>
+        <p><strong>교육 방식:</strong> 질문 → 자기성찰 → 참가자 경험 공유 → 상호토론 → 사례·개념 → 역할활동/실습 → 현업 적용 행동</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="container footer-row"><span>© 2026 Leader Campus · 정은교</span><span>People · Communication · Leadership · Change</span></div></footer>
 </body>
 </html>
